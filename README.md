@@ -1,4 +1,4 @@
-# Drinks-and-food-Tab-App
+# Food and Drinks counter
 Creating a drinks and food tab chrome extension for New Meta Gaming Arena
 
 Project title
