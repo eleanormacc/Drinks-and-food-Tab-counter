@@ -1,25 +1,72 @@
+
+<!--The Application-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drinks and Food Counter</title>
+
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>BillingSystem:Food and Drinks Counter</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!-- This is what the person will click to keep track of the number of products -->
-    <label id="counterLabel"></label><br>
+    <div class="container">
+        <!--Title-->
+        <h1 class="text-center mb-5 mt-5">Food and Drink Counter</h1>
+        <div class="row">
 
-    <!-- Buttons -->
-    <p> Step 1: Add/delete items</p>
-    <button id="addItem">add item</button>
-    <button id="deleteItem">delete item</button>
-    
-    <button id="decreaseBtn">decrease</button>
-    <button id="increaseBtn">increase</button>
+            <!--Input items to be put on the cart-->
+            <div class="col-md-6">
+                <form action="" id="item-form">
+                    <!--Item Name-->
+                    <div class="form-group mb-3">
+                        <label for="item-name">Item Name:</label>
+                        <input type="text" class="form-control" id="item-name">
+                    </div>
+                    <!--Item Price-->
+                    <div class="form-group mb-4">
+                        <label for="item-price">Item Price:</label>
+                        <input type="text" class="form-control" id="item-price">
+                    </div>
+                     <!--Add to Cart-->
+                     <button type="submit" class="btn btn-primary"> Add to Cart</button>
+                </form>
+            </div>
+            
+            <!--Table of items submitted-->
+            <div class="col-md-6 mb-5">
+                <!--Cart Table-->
+                <table class="table" id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <!--Total Cost and invoice Button-->
+                <p id="total-cost">Total Cost: £0</p>
+                <button class="btn btn-success" id="generate-invoice">Generate Invoice</button>
+            </div>
 
+        </div>
+    </div>
 
-
-    <script src="index.js"></script>     <!--link js page-->
-    
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--js file link-->
+    ><script src="script.js"></script>
 </body>
 </html>
+
