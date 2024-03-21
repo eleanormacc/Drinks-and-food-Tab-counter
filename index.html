@@ -28,7 +28,7 @@
         <form id="invoiceform">
         <div class="row mt-5 mb-5">
             <div class="form-group col-md-6">
-                <label for="customerName">Customer Name</label>
+                <label for="customerName">Customer Name/ID</label>
                 <input  type="text" 
                         class="form-control" 
                         id="customerName" 
@@ -47,7 +47,7 @@
                         placeholder="Enter Invoice Date" disabled readonly
                 />
             </div>
-            
+           
         <!--Table of contents-->
         <table class="table table-bordered mt-5">
             <thead>
@@ -55,6 +55,7 @@
                     <th scope="col">Item Name</th>
                     <th scope="col">Item Price</th>
                     <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -62,6 +63,7 @@
             <!--Items will be added dynamically-->
             </tbody>
         </table>
+        <p>*The total of the items will be calculated after you have add another item</p>
         
         <!--Add Items button-->
         <button 
@@ -71,17 +73,17 @@
             Add Item 
         </button>
 
-        <!--Total Amount: All items added together-->
+        <!--Final Total Amount: All items added together-->
         <div class="form-group col-md-6 mt-5">
-            <label for="totalAmount">Total Amount</label>
+            <label for="finalTotalAmount">Final Total Amount</label>
             <input  type="text" 
                     class="form-control" 
-                    id="totalAmount" 
+                    id="finalTotalAmount" 
                     disabled readonly
             />
         </div>
 
-        <!--Generate Invoice button-->
+        <!--Generate Invoice button
         <div class="row mt-5 mb-5">
             <div class="col-md-6">
                 <button 
@@ -89,7 +91,17 @@
                 class="btn btn-success mt-2"> Generate Invoice</button>
             </div>
         </div>
+        -->
         </form>
+
+        <!--Send invoice to email
+        <button 
+            type="button" 
+            class="btn btn-info"
+            onclick="sendToEmail()">
+                    Send invoice to Email 
+        </button>
+        -->
 
     </div>
 
