@@ -7,7 +7,7 @@ function addInvoiceItem(){
     const newItemRow = `
     <tr id="itemRow${itemCounter}">
     <td><input type="text" class="form-control" placeholder="Enter Item Name" required></td>
-    <td><input type="number" class="form-control itemPrice" placeholder="Enter Item Price" required></td>
+    <td><input type="number" class="form-control itemPrice" placeholder="Enter Item Price" required step="0.01"></td>
     <td><input type="number" class="form-control quantity" placeholder="Enter Quantity" required></td>
     <td><input type="text" class="form-control totalItemPrice" disabled readonly></td>
     <td><button type="button class="btn btn-danger" onclick="removeInvoiceItem(${itemCounter})">Remove</button></td>
