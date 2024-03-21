@@ -1,25 +1,23 @@
 body{
-    background-color:#ddddff
+    background-color:rgb(255, 0, 76)
 }
 
-*{
-    color:black;
-
+.container{
+    background-color:aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-#cart-table th, #cart-table td{
+h2{
+    color: rgb(255, 0, 76);
+}
+
+th, td{
     text-align: center;
-    
 }
 
-#total-cost{
-    font: size 24px;
-    font-weight: bold;
-
-}
-
-@media print{
-    .no-print{
-        display:none;
-    }
+#totalAmount{
+    font-weight: bolder;
+    font-size: 18px;
 }
