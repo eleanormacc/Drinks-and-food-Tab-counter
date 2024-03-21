@@ -27,7 +27,6 @@ Include logo/demo screenshot etc.
 - javascript
 
 ## Tech/framework used
-Built with:
 - Bootstrap
 - font-awesome
 - jQuery CND 
