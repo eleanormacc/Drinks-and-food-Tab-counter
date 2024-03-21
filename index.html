@@ -1,5 +1,4 @@
 
-<!--The Application-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,55 +17,96 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <!--Title-->
-        <h1 class="text-center mb-5 mt-5">Food and Drink Counter</h1>
-        <div class="row">
+        <h2 class="mb-5 text-center">Food and Drink Counter</h2>
 
-            <!--Input items to be put on the cart-->
-            <div class="col-md-6">
-                <form action="" id="item-form">
-                    <!--Item Name-->
-                    <div class="form-group mb-3">
-                        <label for="item-name">Item Name:</label>
-                        <input type="text" class="form-control" id="item-name">
-                    </div>
-                    <!--Item Price-->
-                    <div class="form-group mb-4">
-                        <label for="item-price">Item Price:</label>
-                        <input type="text" class="form-control" id="item-price">
-                    </div>
-                     <!--Add to Cart-->
-                     <button type="submit" class="btn btn-primary"> Add to Cart</button>
-                </form>
-            </div>
-            
-            <!--Table of items submitted-->
-            <div class="col-md-6 mb-5">
-                <!--Cart Table-->
-                <table class="table" id="cart-table">
-                    <thead>
-                        <tr>
-                            <th>Item Name</th>
-                            <th>Item Price</th>
-                            <th>Quantity</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-                <!--Total Cost and invoice Button-->
-                <p id="total-cost">Total Cost: £0</p>
-                <button class="btn btn-success" id="generate-invoice">Generate Invoice</button>
+
+    <!--Invoice Form: includes, item name, invoice date, table of items, prices, quantities-->
+
+        <!--Enter Customer Name-->
+        <form id="invoiceform">
+        <div class="row mt-5 mb-5">
+            <div class="form-group col-md-6">
+                <label for="customerName">Customer Name</label>
+                <input  type="text" 
+                        class="form-control" 
+                        id="customerName" 
+                        placeholder="Enter Customer Name" required
+                />
             </div>
 
         </div>
+
+        <!--Enter Invoice Date-->
+            <div class="form-group col-md-6">
+                <label for="invoiceDate">Invoice Date</label>
+                <input  type="text" 
+                        class="form-control" 
+                        id="invoiceDate" 
+                        placeholder="Enter Invoice Date" disabled readonly
+                />
+            </div>
+            
+        <!--Table of contents-->
+        <table class="table table-bordered mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Item Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody id="invoiceItems">
+            <!--Items will be added dynamically-->
+            </tbody>
+        </table>
+        
+        <!--Add Items button-->
+        <button 
+        type="button" 
+        class="btn btn-primary"
+        onclick="addInvoiceItem()">
+            Add Item 
+        </button>
+
+        <!--Total Amount: All items added together-->
+        <div class="form-group col-md-6 mt-5">
+            <label for="totalAmount">Total Amount</label>
+            <input  type="text" 
+                    class="form-control" 
+                    id="totalAmount" 
+                    disabled readonly
+            />
+        </div>
+
+        <!--Generate Invoice button-->
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6">
+                <button 
+                type="submit" 
+                class="btn btn-success mt-2"> Generate Invoice</button>
+            </div>
+        </div>
+        </form>
+
     </div>
 
-    <!--jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!--js file link-->
-    ><script src="script.js"></script>
+
+    <!--SCRIPTS-->
+
+    
+        <!--Poppers.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--js file link-->
+        <script src="script.js">
+        </script>
+
 </body>
 </html>
 
