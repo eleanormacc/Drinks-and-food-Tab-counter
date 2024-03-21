@@ -1,57 +1,48 @@
 # Food and Drinks counter
-Creating a drinks and food tab chrome extension for New Meta Gaming Arena
+This is a personal project I have created to make a food and drinks "bar tab" counter to be used for New Meta Gaming Arena 
 
-Project title
-A little info about your project and/ or overview that explains what the project is about.
+#Motivation
+New Meta Gaming Area is an independent Gaming cafe based in Angel, Greater London, described to have High-End PCs, Private rooms, Streaming room and Consoles. Social events, tournaments and amazing food and drinks.
 
-Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+Whilst working for them, there were often events or big groups of people who would want to pull all food and drink expenses put into one bill at the end of a gaming session, for convenience. This would often lead us the staff to tally the cost on a random Excel page to keep track of the food and drink ordered. Although this method worked, for me, I would struggle to tally up all of the products, as there were no immediate features that did that for that sole task and I could clearly see the numbers and texts attributed to the products and put that our in-house billing system, gLeap. Because my disability affects my cognitive processing of words and numbers, it was a difficult task to constantly cross-reference back to and took a long time. Additionally, other people would not be able to see when someone had already put down a product and it would be tallied more than once or missed in the billing process
 
-Build status
-Build status of continus integration i.e. travis, appveyor etc. Ex. -
+For a resolution to aid my dyslexia and have more organisation while producing a tab, I created the Food and Drinks counter that aided in resolving the problems of this specific task. 
 
-Build Status Windows Build Status
+#Build status
+Complete with intentions to add more features such as: invoice function, send an invoice to email function, photos, adding comments, integration with gLeap
 
-Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
-
-js-standard-style
-
-Screenshots
+#Screenshots
 Include logo/demo screenshot etc.
 
-Tech/framework used
-Ex. -
+#Tech/framework used
+Built with:
+Bootstrap
+font-awesome
+jQuery CND 
+Poppers.js
 
-Built with
 
-Electron
-Features
+#Features
 What makes your project stand out?
 
 Code Example
 Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
-Installation
-Provide step by step series of examples and explanations about how to get a development env running.
+***API Reference
+      Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is 
+      important to at least provide a link to where the API reference docs live.
 
-API Reference
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-Tests
+****Tests
 Describe and show how to run the tests with code examples.
 
-How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+*****How to use:
+STEP 1:
+STEP 2:
+STEP 3:
 
-Contribute
-Let people know how they can contribute into your project. A contributing guideline will be a big plus.
+*****Credits
+Reference idea model
 
-Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.
+#Example of use:
 
-Anything else that seems useful
-License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © Yourname
+EMOCC LTD © Eleanor MacCarthy
