@@ -32,7 +32,7 @@ Built with:
 - font-awesome
 - jQuery CND 
 - Poppers.js
-- 
+  
 ## Features
 What makes your project stand out?
 
