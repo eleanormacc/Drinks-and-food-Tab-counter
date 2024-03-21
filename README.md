@@ -56,4 +56,4 @@ Describe and show how to run the tests with code examples.
 
 ## Example of use:
 
-** EMOCC LTD © Eleanor MacCarthy ** 
+**EMOCC LTD ©** Eleanor MacCarthy 
