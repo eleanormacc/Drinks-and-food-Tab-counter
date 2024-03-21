@@ -15,16 +15,16 @@ Complete with intentions to add more features such as: invoice function, send an
 Include logo/demo screenshot etc.
 
 # Language used
-Html
-Css
-javascript
+- Html
+- Css
+- javascript
 
 # Tech/framework used
 Built with:
-Bootstrap
-font-awesome
-jQuery CND 
-Poppers.js
+- Bootstrap
+- font-awesome
+- jQuery CND 
+- Poppers.js
 
 
 # Features
