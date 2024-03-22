@@ -19,7 +19,7 @@ Complete with intentions to add more features such as:
 
 ## Screenshots
 Include logo/demo screenshot etc.
-![Screenshot of the application filled in.](https://myoctocat.com/assets/images/base-octocat.svg)
+<img width="1095" alt="Screenshot 2024-03-21 at 13 32 30" src="https://github.com/eleanormacc/Drinks-and-food-Tab-counter/assets/115783158/061a3f8a-f8c0-4b10-98ad-f7900bd6e93d">
 
 # Technical work
 ## Language used
