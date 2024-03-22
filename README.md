@@ -19,6 +19,7 @@ Complete with intentions to add more features such as:
 
 ## Screenshots
 Include logo/demo screenshot etc.
+![Screenshot of the application filled in.](https://myoctocat.com/assets/images/base-octocat.svg)
 
 # Technical work
 ## Language used
