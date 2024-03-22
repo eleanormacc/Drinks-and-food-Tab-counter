@@ -47,9 +47,10 @@ Describe and show how to run the tests with code examples.
 
 # Additional information
 ## How to use:
-- STEP 1:
-- STEP 2:
-- STEP 3:
+- STEP 1: Enter customers name
+- STEP 2: Add item and fill in details.
+- STEP 3: To submit the item, press add item again
+- STEP 4: read the file total in the section that says final total  
 
 ## Credits
 [Reference idea model](https://www.youtube.com/watch?v=BQ2Nx3smHwc)
