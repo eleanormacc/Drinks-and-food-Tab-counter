@@ -39,9 +39,6 @@ Complete with intentions to add more features such as:
 - STEP 3: To submit the item, press add item again
 - STEP 4: read the file total in the section that says final total  
 
-## Credits
-[Reference idea model](https://www.youtube.com/watch?v=BQ2Nx3smHwc)
-
 ## Example of use:
 
 **EMOCC LTD ©** Eleanor MacCarthy 
